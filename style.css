@@ -1,0 +1,150 @@
+:root {
+  --secondary-color: #e2e2e2;
+  --label-text-color: #3d3d3d;
+  --btn-color: #494949;
+  --input-color: #f4f4f4;
+  --close-color: #ffcccc;
+  --close-bg-color: #f92b2b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--secondary-color);
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* ============== HEADER ==============*/
+
+.logo__bookList {
+  width: 200px;
+  display: block;
+  margin: 10vh auto;
+}
+
+/* ============== SECTION ==============*/
+
+.section {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+/* ======= FORM =========*/
+.form {
+  width: 35%;
+}
+.container {
+  margin: 1em 0;
+  position: relative;
+}
+.input {
+  width: 100%;
+  padding: 0.7em 0.5em;
+  border: none;
+  border-radius: 0.7em;
+}
+label {
+  color: var(--label-text-color);
+  display: inline-block;
+  margin-bottom: 0.2em;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.sub-btn {
+  display: block;
+  width: 100%;
+  margin-top: 2.5em;
+  border: none;
+  padding: 0.7em;
+  border-radius: 0.7em;
+  background-color: var(--btn-color);
+  color: var(--secondary-color);
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 800;
+  cursor: pointer;
+}
+.form__icon {
+  color: var(--label-text-color);
+  font-size: 0.8em;
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 0.3em;
+}
+/* ======= TABLE =========*/
+.table {
+  width: 60%;
+  text-align: left;
+  margin-left: auto;
+  margin-top: 1em;
+}
+.head {
+  display: flex;
+  width: 100%;
+  padding-bottom: 0.3em;
+  border-bottom: solid 1px black;
+  font-size: 0.9em;
+}
+.head__col,
+.body__col {
+  width: 17.5%;
+}
+.body__col:first-child {
+  width: 30%;
+}
+.head .head__col:first-child {
+  width: 30%;
+}
+.body {
+  font-size: 1em;
+  font-weight: 600;
+}
+.body__row {
+  display: flex;
+  background-color: var(--input-color);
+  margin-top: 1em;
+  padding: 0.7em 0.5em;
+  border-radius: 0.5em;
+  transform: translateY(0) rotateZ(0);
+  opacity: 1;
+  transition: all 1s ease;
+}
+.body__col:last-child {
+  margin-right: 0em;
+  text-align: right;
+  align-self: center;
+}
+.fa-times {
+  background-color: var(--close-bg-color);
+  color: var(--close-color);
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.fall {
+  transform: translateY(5em) rotateZ(7deg);
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .logo__bookList {
+    width: 200px;
+    display: block;
+    margin: 3vh auto;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .form {
+    width: 90%;
+    margin: auto;
+  }
+  .table {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+  }
+}

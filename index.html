@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <head>
+      <img
+        src="img/booklist_logo.svg"
+        alt="logo ListBook"
+        class="logo__bookList"
+      />
+    </head>
+    <section class="section">
+      <form id="book-form" class="form">
+        <div id="title-input" class="container">
+          <label for="title">Title:</label> <br />
+          <input type="text" name="title" id="title" class="input" />
+          <i class="fas fa-star form__icon"></i>
+        </div>
+        <div id="author-input" class="container">
+          <label for="author">Author:</label> <br />
+          <input type="text" name="author" id="author" class="input" />
+          <i class="fas fa-user form__icon"></i>
+        </div>
+        <div id="isbn-input" class="container">
+          <label for="isbn">#ISBN:</label> <br />
+          <input type="number" name="isbn" id="isbn" class="input" />
+          <i class="fas fa-hashtag form__icon"></i>
+        </div>
+        <div id="publisher-input" class="container">
+          <label for="publisher">Publisher:</label> <br />
+          <input type="text" name="publisher" id="publisher" class="input" />
+          <i class="fas fa-pen-nib form__icon"></i>
+        </div>
+        <input type="submit" value="ADD BOOK" id="submit-btn" class="sub-btn" />
+      </form>
+
+      <div class="table">
+        <div class="table__container">
+        <div class="head">
+          <div class="head__col">Title</div>
+          <div class="head__col">Author</div>
+          <div class="head__col">#ISBN</div>
+          <div class="head__col">Publisher</div>
+          <div class="head__col"></div>
+        </div>
+        <div class="body">
+        </div>
+      </div>
+    </section>
+    <script src="books.js"></script>
+    <script src="storage.js"></script>
+    <script src="design.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
